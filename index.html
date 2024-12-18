@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Rental Registration</title>
+    <link rel="stylesheet" href="car_css.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Car Rental Registration</h1>
+        <form id="car-rental-form" action="car_rental.php" method="POST">
+            <!-- Personal Information -->
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Car Selection -->
+            <div class="form-group">
+                <label for="car-selection">Select Car Model</label>
+                <select id="car-selection" name="car-selection" required>
+                    <option value="" disabled selected>Select a car</option>
+                    <option value="sedan">Sedan (₹4000/day)</option>
+                    <option value="suv">SUV (₹5000/day)</option>
+                    <option value="hatchback">Hatchback (₹4500/day)</option>
+                    <option value="convertible">Convertible (₹6000/day)</option>
+                </select>
+            </div>
+
+            <!-- Rental Dates -->
+            <div class="form-group">
+                <label for="pickup-date">Pickup Date</label>
+                <input type="date" id="pickup-date" name="pickup-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="return-date">Return Date</label>
+                <input type="date" id="return-date" name="return-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rental-duration">Rental Duration</label>
+                <input type="text" id="rental-duration" name="rental-duration" readonly>
+            </div>
+
+            <!-- Optional Services -->
+            <div class="form-group">
+                <label for="gps">GPS/Navigation</label>
+                <input type="checkbox" id="gps" name="gps">
+            </div>
+
+            <div class="form-group">
+                <label for="child-seat">Child Seat</label>
+                <input type="checkbox" id="child-seat" name="child-seat">
+            </div>
+
+            <div class="form-group">
+                <label for="insurance">Insurance</label>
+                <input type="checkbox" id="insurance" name="insurance">
+            </div>
+
+           
+            
+           <!-- Terms and Conditions -->
+           <div class="form-group">
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                I agree to the <a href="/terms" target="_blank">terms and conditions</a>
+            </label>
+        </div>
+
+               <!-- Submit Button -->
+               <button type="submit" id="submitBtn">Register</button>
+              </form>
+
+            <!-- Error message -->
+            <div id="error-message" class="error-message"></div>
+        </form>
+    </div>
+
+   <script src="car_js.js"></script>
+</body>
+</html>

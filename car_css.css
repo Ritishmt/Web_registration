@@ -1,0 +1,105 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items:left;
+  justify-content:right;
+  min-height: 100vh;
+  background-image:url(https://www.enterpriseappstoday.com/wp-content/uploads/2024/02/car-rental-hqp.jpg);
+  background-size:70% ;
+  background-repeat:no-repeat;
+
+}
+
+/* Container for the form */
+.container {
+  box-align: right;
+  background-color:transparent;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Heading styles */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+input[type="date"] {
+  padding: 10px;
+}
+
+button{
+  width: 100%;
+  padding: 15px;
+  background-color: #1fb943;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1bee25;
+}
+
+#confirmationMessage {
+  text-align: center;
+  color: green;
+  font-size: 18px;
+  margin-top: 20px;
+}
+/* Error message styles */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
